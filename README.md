@@ -84,6 +84,4 @@ src/
 ## 🚧 Running the Project  
 ```bash
 npm run dev
-
-[^starter]: [TipTap Starter Template](https://github.com/buddeshya/tip-tap-template)[1][2]: Next.js + Tailwind CSS configuration docs[9][11]: Zustand implementation guides  
-[^sample]: UI reference from assignment description
+```
