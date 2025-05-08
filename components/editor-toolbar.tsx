@@ -14,12 +14,12 @@ export default function EditorToolbar({ editor }: EditorToolbarProps) {
   }
 
   return (
-    <div className="border-b border-gray-200 p-2 flex flex-wrap gap-1">
+    <div className="   p-2 flex flex-wrap gap-1">
       <Button
         variant="ghost"
         size="sm"
         onClick={() => editor.chain().focus().toggleBold().run()}
-        className={editor.isActive("bold") ? "bg-gray-200" : ""}
+        className={editor.isActive("bold") ? "bg-zinc-200 dark:bg-zinc-700 " : ""}
         title="Bold"
       >
         <Bold size={16} />
@@ -29,19 +29,19 @@ export default function EditorToolbar({ editor }: EditorToolbarProps) {
         variant="ghost"
         size="sm"
         onClick={() => editor.chain().focus().toggleItalic().run()}
-        className={editor.isActive("italic") ? "bg-gray-200" : ""}
+        className={editor.isActive("italic") ? "bg-zinc-200 dark:bg-zinc-700 " : ""}
         title="Italic"
       >
         <Italic size={16} />
       </Button>
 
-      <div className="w-px h-6 bg-gray-200 mx-1"></div>
+      <div className="w-px h-6 bg-zinc-200 dark:bg-zinc-700  mx-1"></div>
 
       <Button
         variant="ghost"
         size="sm"
         onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()}
-        className={editor.isActive("heading", { level: 1 }) ? "bg-gray-200" : ""}
+        className={editor.isActive("heading", { level: 1 }) ? "bg-zinc-200 dark:bg-zinc-700 " : ""}
         title="Heading 1"
       >
         <Heading1 size={16} />
@@ -51,7 +51,7 @@ export default function EditorToolbar({ editor }: EditorToolbarProps) {
         variant="ghost"
         size="sm"
         onClick={() => editor.chain().focus().toggleHeading({ level: 2 }).run()}
-        className={editor.isActive("heading", { level: 2 }) ? "bg-gray-200" : ""}
+        className={editor.isActive("heading", { level: 2 }) ? "bg-zinc-200 dark:bg-zinc-700 " : ""}
         title="Heading 2"
       >
         <Heading2 size={16} />
@@ -61,19 +61,19 @@ export default function EditorToolbar({ editor }: EditorToolbarProps) {
         variant="ghost"
         size="sm"
         onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()}
-        className={editor.isActive("heading", { level: 3 }) ? "bg-gray-200" : ""}
+        className={editor.isActive("heading", { level: 3 }) ? "bg-zinc-200 dark:bg-zinc-700 " : ""}
         title="Heading 3"
       >
         <Heading3 size={16} />
       </Button>
 
-      <div className="w-px h-6 bg-gray-200 mx-1"></div>
+      <div className="w-px h-6 bg-zinc-200 dark:bg-zinc-700  mx-1"></div>
 
       <Button
         variant="ghost"
         size="sm"
         onClick={() => editor.chain().focus().toggleBulletList().run()}
-        className={editor.isActive("bulletList") ? "bg-gray-200" : ""}
+        className={editor.isActive("bulletList") ? "bg-zinc-200 dark:bg-zinc-700 " : ""}
         title="Bullet List"
       >
         <List size={16} />
@@ -83,7 +83,7 @@ export default function EditorToolbar({ editor }: EditorToolbarProps) {
         variant="ghost"
         size="sm"
         onClick={() => editor.chain().focus().toggleOrderedList().run()}
-        className={editor.isActive("orderedList") ? "bg-gray-200" : ""}
+        className={editor.isActive("orderedList") ? "bg-zinc-200 dark:bg-zinc-700 " : ""}
         title="Ordered List"
       >
         <ListOrdered size={16} />
